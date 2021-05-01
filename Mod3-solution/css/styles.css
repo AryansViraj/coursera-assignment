@@ -5,15 +5,15 @@
 #header-nav {
     border: 0;
     border-radius: 0;
-    padding: 0;
-    margin: 0;
-    height: 90px;
     background-color: rgb(30, 64, 78);
 }
-#header-nav .navbar-brand h1 {
+.navbar-header {
+    height: 90px;
+}
+.navbar-brand h1 {
     color: white;
     padding-bottom: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .navbar-header button.navbar-toggle {
     clear: both;
