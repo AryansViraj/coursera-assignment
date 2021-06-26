@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Artha_logo.png" type="image">
+    <title>Magazine</title>
+    <style>
+        body {
+            overflow: hidden;
+            background: rgb(255, 255, 255);
+        }
+        #magazine {
+            height: 80vh;
+            margin: auto;
+            box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.575);
+        }
+        #magazine .turn-page {
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+        #magazine img {
+            height: 100%;
+        }
+        /* #magazine div {
+            height: 50px;
+            width: 100px;
+            padding: 0;
+        } */
+        /* .page1 {
+            background: url(Pages/1.jpeg);
+        } */
+    </style>
+</head>
+<body>
+   <div id="canvas">
+        <div class="zoom-icon zoom-icon-in"></div>
+        <div class="magazine-viewport">
+            <div class="container">
+                <div id="magazine">
+                    <div class="page1"style="background: url(Pages/1.jpeg) no-repeat center; background-size: contain;" class="page"></div>
+                    <div class="page1"style="background: url(Pages/2.jpeg) no-repeat center; background-size: contain;" class="page"></div>
+                    <div class="page1"style="background: url(Pages/3.jpeg) no-repeat center; background-size: contain;" class="page"></div>
+                    <div class="page1"style="background: url(Pages/4.jpeg) no-repeat center; background-size: contain;" class="page"></div>
+                    <div class="page1"style="background: url(Pages/5.jpeg) no-repeat center; background-size: contain;" class="page"></div>
+                    <div class="pages"><img src="Pages/1.jpeg" alt=""></div>
+                    <div class="pages"><img src="Pages/2.jpeg" alt=""></div>
+                    <div class="pages"><img src="Pages/3.jpeg" alt=""></div>
+                    <div class="pages"><img src="Pages/4.jpeg" alt=""></div>
+                    <div class="pages"><img src="Pages/2.jpeg" alt=""></div>
+                    <!-- <img src="Pages/1.jpeg" alt="">
+                    <img src="Pages/2.jpeg" alt="">
+                    <img src="Pages/3.jpeg" alt="">
+                    <img src="Pages/4.jpeg" alt=""> -->
+                </div>
+            </div>
+        </div>
+   </div>
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Js/turn.min.js"></script>
+    <script type="text/javascript">
+        $("#magazine").turn({
+            width: 846,
+            height: 600,
+            gradients: true,
+            acceleration: true,
+        });
+    </script>
+</body>
+</html>
